@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F90A1C0F1B1DA57E00C5629F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F90A1C0D1B1DA57E00C5629F /* InfoPlist.strings */; };
+		F90A1C121B1DA57E00C5629F /* VFSFilter0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90A1C111B1DA57E00C5629F /* VFSFilter0.cpp */; };
+		F90A1C1B1B1E2CC200C5629F /* VFSHooks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90A1C191B1E2CC200C5629F /* VFSHooks.cpp */; };
+		F90A1C1C1B1E2CC200C5629F /* VFSHooks.h in Headers */ = {isa = PBXBuildFile; fileRef = F90A1C1A1B1E2CC200C5629F /* VFSHooks.h */; };
+		F90A1C241B1F52E500C5629F /* VmPmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90A1C221B1F52E500C5629F /* VmPmap.cpp */; };
+		F90A1C251B1F52E500C5629F /* VmPmap.h in Headers */ = {isa = PBXBuildFile; fileRef = F90A1C231B1F52E500C5629F /* VmPmap.h */; };
+		F90A1C281B1F5ADE00C5629F /* Kauth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90A1C261B1F5ADE00C5629F /* Kauth.cpp */; };
+		F90A1C291B1F5ADE00C5629F /* Kauth.h in Headers */ = {isa = PBXBuildFile; fileRef = F90A1C271B1F5ADE00C5629F /* Kauth.h */; };
+		F90A67F01B616B360011B233 /* WaitingList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90A67EE1B616B360011B233 /* WaitingList.cpp */; };
+		F90A67F11B616B360011B233 /* WaitingList.h in Headers */ = {isa = PBXBuildFile; fileRef = F90A67EF1B616B360011B233 /* WaitingList.h */; };
+		F90A78FD1B2D3C0600303ABF /* RecursionEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90A78FB1B2D3C0600303ABF /* RecursionEngine.cpp */; };
+		F90A78FE1B2D3C0600303ABF /* RecursionEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = F90A78FC1B2D3C0600303ABF /* RecursionEngine.h */; };
+		F90D539C1B3933BD007EC6B7 /* ApplicationsData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90D539A1B3933BD007EC6B7 /* ApplicationsData.cpp */; };
+		F90D539D1B3933BD007EC6B7 /* ApplicationsData.h in Headers */ = {isa = PBXBuildFile; fileRef = F90D539B1B3933BD007EC6B7 /* ApplicationsData.h */; };
+		F90DB5571B35C88F00C19B73 /* VNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90DB5551B35C88F00C19B73 /* VNode.cpp */; };
+		F90DB5581B35C88F00C19B73 /* VNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F90DB5561B35C88F00C19B73 /* VNode.h */; };
+		F90E389E1B36E3EE00C14797 /* VersionDependent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90E389C1B36E3EE00C14797 /* VersionDependent.cpp */; };
+		F90E389F1B36E3EE00C14797 /* VersionDependent.h in Headers */ = {isa = PBXBuildFile; fileRef = F90E389D1B36E3EE00C14797 /* VersionDependent.h */; };
+		F90E3BE11B7356D300D72735 /* QvrMacPolicy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F90E3BDF1B7356D300D72735 /* QvrMacPolicy.cpp */; };
+		F90E3BE21B7356D300D72735 /* QvrMacPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = F90E3BE01B7356D300D72735 /* QvrMacPolicy.h */; };
+		F95DA3741B22F68D004C965C /* VFSFilter0UserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F95DA3711B22F68D004C965C /* VFSFilter0UserClient.cpp */; };
+		F95DA3751B22F68D004C965C /* VFSFilter0UserClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F95DA3721B22F68D004C965C /* VFSFilter0UserClient.h */; };
+		F95DA3761B22F68D004C965C /* VFSFilter0UserClientInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F95DA3731B22F68D004C965C /* VFSFilter0UserClientInterface.h */; };
+		F9D20CD61B37DF6A006C9688 /* VNodeHook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D20CD41B37DF6A006C9688 /* VNodeHook.cpp */; };
+		F9D20CD71B37DF6A006C9688 /* VNodeHook.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D20CD51B37DF6A006C9688 /* VNodeHook.h */; };
+		F9D20CDA1B37E0EA006C9688 /* CommonHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D20CD81B37E0EA006C9688 /* CommonHashTable.cpp */; };
+		F9D20CDB1B37E0EA006C9688 /* CommonHashTable.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D20CD91B37E0EA006C9688 /* CommonHashTable.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F90A1C051B1DA57E00C5629F /* VFSFilter0.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VFSFilter0.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		F90A1C091B1DA57E00C5629F /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		F90A1C0C1B1DA57E00C5629F /* VFSFilter0-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VFSFilter0-Info.plist"; sourceTree = "<group>"; };
+		F90A1C0E1B1DA57E00C5629F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F90A1C101B1DA57E00C5629F /* VFSFilter0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFSFilter0.h; sourceTree = "<group>"; };
+		F90A1C111B1DA57E00C5629F /* VFSFilter0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VFSFilter0.cpp; sourceTree = "<group>"; };
+		F90A1C131B1DA57E00C5629F /* VFSFilter0-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VFSFilter0-Prefix.pch"; sourceTree = "<group>"; };
+		F90A1C191B1E2CC200C5629F /* VFSHooks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VFSHooks.cpp; sourceTree = "<group>"; };
+		F90A1C1A1B1E2CC200C5629F /* VFSHooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFSHooks.h; sourceTree = "<group>"; };
+		F90A1C211B1E341200C5629F /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		F90A1C221B1F52E500C5629F /* VmPmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VmPmap.cpp; sourceTree = "<group>"; };
+		F90A1C231B1F52E500C5629F /* VmPmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmPmap.h; sourceTree = "<group>"; };
+		F90A1C261B1F5ADE00C5629F /* Kauth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Kauth.cpp; sourceTree = "<group>"; };
+		F90A1C271B1F5ADE00C5629F /* Kauth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kauth.h; sourceTree = "<group>"; };
+		F90A67EE1B616B360011B233 /* WaitingList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaitingList.cpp; sourceTree = "<group>"; };
+		F90A67EF1B616B360011B233 /* WaitingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingList.h; sourceTree = "<group>"; };
+		F90A78FB1B2D3C0600303ABF /* RecursionEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecursionEngine.cpp; sourceTree = "<group>"; };
+		F90A78FC1B2D3C0600303ABF /* RecursionEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecursionEngine.h; sourceTree = "<group>"; };
+		F90D539A1B3933BD007EC6B7 /* ApplicationsData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApplicationsData.cpp; sourceTree = "<group>"; };
+		F90D539B1B3933BD007EC6B7 /* ApplicationsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationsData.h; sourceTree = "<group>"; };
+		F90DB5551B35C88F00C19B73 /* VNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VNode.cpp; sourceTree = "<group>"; };
+		F90DB5561B35C88F00C19B73 /* VNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VNode.h; sourceTree = "<group>"; };
+		F90E389C1B36E3EE00C14797 /* VersionDependent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VersionDependent.cpp; sourceTree = "<group>"; };
+		F90E389D1B36E3EE00C14797 /* VersionDependent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionDependent.h; sourceTree = "<group>"; };
+		F90E3BDF1B7356D300D72735 /* QvrMacPolicy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QvrMacPolicy.cpp; sourceTree = "<group>"; };
+		F90E3BE01B7356D300D72735 /* QvrMacPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QvrMacPolicy.h; sourceTree = "<group>"; };
+		F95DA3711B22F68D004C965C /* VFSFilter0UserClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VFSFilter0UserClient.cpp; sourceTree = "<group>"; };
+		F95DA3721B22F68D004C965C /* VFSFilter0UserClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFSFilter0UserClient.h; sourceTree = "<group>"; };
+		F95DA3731B22F68D004C965C /* VFSFilter0UserClientInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFSFilter0UserClientInterface.h; sourceTree = "<group>"; };
+		F9D20CD41B37DF6A006C9688 /* VNodeHook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VNodeHook.cpp; sourceTree = "<group>"; };
+		F9D20CD51B37DF6A006C9688 /* VNodeHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VNodeHook.h; sourceTree = "<group>"; };
+		F9D20CD81B37E0EA006C9688 /* CommonHashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommonHashTable.cpp; sourceTree = "<group>"; };
+		F9D20CD91B37E0EA006C9688 /* CommonHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHashTable.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F90A1C001B1DA57E00C5629F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F90A1BFA1B1DA57E00C5629F = {
+			isa = PBXGroup;
+			children = (
+				F90A1C0A1B1DA57E00C5629F /* VFSFilter0 */,
+				F90A1C071B1DA57E00C5629F /* Frameworks */,
+				F90A1C061B1DA57E00C5629F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F90A1C061B1DA57E00C5629F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F90A1C051B1DA57E00C5629F /* VFSFilter0.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F90A1C071B1DA57E00C5629F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F90A1C081B1DA57E00C5629F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F90A1C081B1DA57E00C5629F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F90A1C091B1DA57E00C5629F /* Kernel.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F90A1C0A1B1DA57E00C5629F /* VFSFilter0 */ = {
+			isa = PBXGroup;
+			children = (
+				F90E3BDF1B7356D300D72735 /* QvrMacPolicy.cpp */,
+				F90E3BE01B7356D300D72735 /* QvrMacPolicy.h */,
+				F90D539A1B3933BD007EC6B7 /* ApplicationsData.cpp */,
+				F90D539B1B3933BD007EC6B7 /* ApplicationsData.h */,
+				F9D20CD81B37E0EA006C9688 /* CommonHashTable.cpp */,
+				F9D20CD91B37E0EA006C9688 /* CommonHashTable.h */,
+				F90A78FB1B2D3C0600303ABF /* RecursionEngine.cpp */,
+				F90A78FC1B2D3C0600303ABF /* RecursionEngine.h */,
+				F90A1C211B1E341200C5629F /* Common.h */,
+				F90A1C261B1F5ADE00C5629F /* Kauth.cpp */,
+				F90A1C271B1F5ADE00C5629F /* Kauth.h */,
+				F90A1C0B1B1DA57E00C5629F /* Supporting Files */,
+				F90A1C111B1DA57E00C5629F /* VFSFilter0.cpp */,
+				F90A1C101B1DA57E00C5629F /* VFSFilter0.h */,
+				F95DA3711B22F68D004C965C /* VFSFilter0UserClient.cpp */,
+				F95DA3721B22F68D004C965C /* VFSFilter0UserClient.h */,
+				F95DA3731B22F68D004C965C /* VFSFilter0UserClientInterface.h */,
+				F90A1C191B1E2CC200C5629F /* VFSHooks.cpp */,
+				F90A1C1A1B1E2CC200C5629F /* VFSHooks.h */,
+				F90A1C221B1F52E500C5629F /* VmPmap.cpp */,
+				F90A1C231B1F52E500C5629F /* VmPmap.h */,
+				F90DB5551B35C88F00C19B73 /* VNode.cpp */,
+				F90DB5561B35C88F00C19B73 /* VNode.h */,
+				F90E389C1B36E3EE00C14797 /* VersionDependent.cpp */,
+				F90E389D1B36E3EE00C14797 /* VersionDependent.h */,
+				F9D20CD41B37DF6A006C9688 /* VNodeHook.cpp */,
+				F9D20CD51B37DF6A006C9688 /* VNodeHook.h */,
+				F90A67EE1B616B360011B233 /* WaitingList.cpp */,
+				F90A67EF1B616B360011B233 /* WaitingList.h */,
+			);
+			path = VFSFilter0;
+			sourceTree = "<group>";
+		};
+		F90A1C0B1B1DA57E00C5629F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F90A1C0C1B1DA57E00C5629F /* VFSFilter0-Info.plist */,
+				F90A1C0D1B1DA57E00C5629F /* InfoPlist.strings */,
+				F90A1C131B1DA57E00C5629F /* VFSFilter0-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F90A1C011B1DA57E00C5629F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90A1C291B1F5ADE00C5629F /* Kauth.h in Headers */,
+				F9D20CD71B37DF6A006C9688 /* VNodeHook.h in Headers */,
+				F90A1C251B1F52E500C5629F /* VmPmap.h in Headers */,
+				F90A1C1C1B1E2CC200C5629F /* VFSHooks.h in Headers */,
+				F90A78FE1B2D3C0600303ABF /* RecursionEngine.h in Headers */,
+				F90E3BE21B7356D300D72735 /* QvrMacPolicy.h in Headers */,
+				F90D539D1B3933BD007EC6B7 /* ApplicationsData.h in Headers */,
+				F95DA3751B22F68D004C965C /* VFSFilter0UserClient.h in Headers */,
+				F9D20CDB1B37E0EA006C9688 /* CommonHashTable.h in Headers */,
+				F90E389F1B36E3EE00C14797 /* VersionDependent.h in Headers */,
+				F90DB5581B35C88F00C19B73 /* VNode.h in Headers */,
+				F90A67F11B616B360011B233 /* WaitingList.h in Headers */,
+				F95DA3761B22F68D004C965C /* VFSFilter0UserClientInterface.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F90A1C041B1DA57E00C5629F /* VFSFilter0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F90A1C161B1DA57E00C5629F /* Build configuration list for PBXNativeTarget "VFSFilter0" */;
+			buildPhases = (
+				F90A1BFF1B1DA57E00C5629F /* Sources */,
+				F90A1C001B1DA57E00C5629F /* Frameworks */,
+				F90A1C011B1DA57E00C5629F /* Headers */,
+				F90A1C021B1DA57E00C5629F /* Resources */,
+				F90A1C031B1DA57E00C5629F /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VFSFilter0;
+			productName = VFSFilter0;
+			productReference = F90A1C051B1DA57E00C5629F /* VFSFilter0.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F90A1BFB1B1DA57E00C5629F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = slava;
+				TargetAttributes = {
+					F90A1C041B1DA57E00C5629F = {
+						DevelopmentTeam = UENQ27R64K;
+					};
+				};
+			};
+			buildConfigurationList = F90A1BFE1B1DA57E00C5629F /* Build configuration list for PBXProject "VFSFilter0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F90A1BFA1B1DA57E00C5629F;
+			productRefGroup = F90A1C061B1DA57E00C5629F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F90A1C041B1DA57E00C5629F /* VFSFilter0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F90A1C021B1DA57E00C5629F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90A1C0F1B1DA57E00C5629F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F90A1C031B1DA57E00C5629F /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F90A1BFF1B1DA57E00C5629F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90A78FD1B2D3C0600303ABF /* RecursionEngine.cpp in Sources */,
+				F90D539C1B3933BD007EC6B7 /* ApplicationsData.cpp in Sources */,
+				F9D20CDA1B37E0EA006C9688 /* CommonHashTable.cpp in Sources */,
+				F90A1C241B1F52E500C5629F /* VmPmap.cpp in Sources */,
+				F90E389E1B36E3EE00C14797 /* VersionDependent.cpp in Sources */,
+				F90A1C1B1B1E2CC200C5629F /* VFSHooks.cpp in Sources */,
+				F9D20CD61B37DF6A006C9688 /* VNodeHook.cpp in Sources */,
+				F90A1C121B1DA57E00C5629F /* VFSFilter0.cpp in Sources */,
+				F90DB5571B35C88F00C19B73 /* VNode.cpp in Sources */,
+				F90A1C281B1F5ADE00C5629F /* Kauth.cpp in Sources */,
+				F90E3BE11B7356D300D72735 /* QvrMacPolicy.cpp in Sources */,
+				F95DA3741B22F68D004C965C /* VFSFilter0UserClient.cpp in Sources */,
+				F90A67F01B616B360011B233 /* WaitingList.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F90A1C0D1B1DA57E00C5629F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F90A1C0E1B1DA57E00C5629F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F90A1C141B1DA57E00C5629F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MACH_ASSERT=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F90A1C151B1DA57E00C5629F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F90A1C171B1DA57E00C5629F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VFSFilter0/VFSFilter0-Prefix.pch";
+				INFOPLIST_FILE = "VFSFilter0/VFSFilter0-Info.plist";
+				MODULE_NAME = com.VFSFilter0;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		F90A1C181B1DA57E00C5629F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VFSFilter0/VFSFilter0-Prefix.pch";
+				INFOPLIST_FILE = "VFSFilter0/VFSFilter0-Info.plist";
+				MODULE_NAME = com.VFSFilter0;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F90A1BFE1B1DA57E00C5629F /* Build configuration list for PBXProject "VFSFilter0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F90A1C141B1DA57E00C5629F /* Debug */,
+				F90A1C151B1DA57E00C5629F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F90A1C161B1DA57E00C5629F /* Build configuration list for PBXNativeTarget "VFSFilter0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F90A1C171B1DA57E00C5629F /* Debug */,
+				F90A1C181B1DA57E00C5629F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F90A1BFB1B1DA57E00C5629F /* Project object */;
+}
