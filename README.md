@@ -18,7 +18,7 @@ The filter was tested on Mac OS X Yosemite (10.10) and Mac OS X El Capitan (10.1
 ```
 #if !defined(MAC_OS_X_VERSION_10_11) || MAC_OS_X_VERSION_MIN_REQUIRED <= MAC_OS_X_VERSION_10_11
 ```
-is used to choose the target OS version during compilation. If the condition is evaluated as true a kext will support Yosemite (10.10) and Mac OS X El Capitan (10.11), else a kext for Sierra (10.12) is being built. 
+is used to choose the target OS version during compilation. If the condition is evaluated as true a kext will support Yosemite (10.10) and El Capitan (10.11), else a kext for Sierra (10.12) is being built. 
 
 ##Filter loading
 
