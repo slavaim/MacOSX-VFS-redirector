@@ -14,11 +14,11 @@ The filter employs a user mode client for data modification and shadow file crea
 
 The filter's core is https://github.com/slavaim/MacOSX-VFS-redirector/blob/master/VFSFilter0/VFSFilter0/VFSHooks.cpp . It contains VFS hooks to intercept file creation and open, redirect IO and call a user client.
 
-The filter was tested on Mac OS X Yosemite (10.10) and Mac OS X El Capitan (10.11). A Sierra(10.12) support was added with https://github.com/slavaim/MacOSX-VFS-redirector/commit/48b7868d64b76b5da72bfce890180a0da323f028 commit. The vnode structure definition has changed in Sierra. A preprocessor condition in VersionDependent.cpp
+The filter was tested on Mac OS X Yosemite (10.10) and Mac OS X El Capitan (10.11). A Sierra (10.12) support was added with https://github.com/slavaim/MacOSX-VFS-redirector/commit/48b7868d64b76b5da72bfce890180a0da323f028 commit. The vnode structure definition has changed in Sierra. A preprocessor condition in VersionDependent.cpp
 ```
-#if defined(MAC_OS_X_VERSION_10_11) && MAC_OS_X_VERSION_MIN_REQUIRED <= MAC_OS_X_VERSION_10_11
+#if !defined(MAC_OS_X_VERSION_10_11) || MAC_OS_X_VERSION_MIN_REQUIRED <= MAC_OS_X_VERSION_10_11
 ```
-is used to choose the target OS version during compilation.
+is used to choose the target OS version during compilation. If the condition is evaluated as true a kext will support Yosemite (10.10) and Mac OS X El Capitan (10.11), else a kext for Sierra (10.12) is being built. 
 
 ##Filter loading
 
