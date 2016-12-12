@@ -44,7 +44,9 @@ QvrVnodeSetsize(vnode_t vp, off_t size, int ioflag, vfs_context_t ctx)
 
 //
 // The following code is full of lie. For a commercial release a version
-// independent hooker must be implemented.
+// independent hooker must be implemented. Look at
+// https://github.com/slavaim/MacOSX-FileSystem-Filter/blob/master/FsdFilter/FltFakeFSD.cpp#L1902
+// for an implementation for vnode structure layout.
 //
 
 #if !defined(MAC_OS_X_VERSION_10_10)
