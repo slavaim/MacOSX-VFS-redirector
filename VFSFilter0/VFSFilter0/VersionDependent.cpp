@@ -51,9 +51,14 @@ QvrVnodeSetsize(vnode_t vp, off_t size, int ioflag, vfs_context_t ctx)
     #error "Looks like you are compiling with the old SDK"
 #endif
 
+// start of macOS version switching
 #if !defined(MAC_OS_X_VERSION_10_11) || MAC_OS_X_VERSION_MIN_REQUIRED <= MAC_OS_X_VERSION_10_11
 
+////////////////////////////////////////////////////
+//
 // compile for 10.11 or older version
+//
+/////////////////////////////////////////////////////
 
 /*
  * This structure describes the vnode operation taking place.
@@ -179,9 +184,19 @@ struct vfstable_header_Yosemite {
 typedef struct mount_header_Yosemite mount_header_internal;
 typedef struct vfstable_header_Yosemite vfstable_header_internal;
 
+////////////////////////////////////////////////////
+//
+// end of 10.11 or older version definitions
+//
+/////////////////////////////////////////////////////
+
 #else
 
+////////////////////////////////////////////////////
+//
 // compile for Sierra(10.12)
+//
+/////////////////////////////////////////////////////
 
 /*
  * This structure describes the vnode operation taking place.
@@ -306,7 +321,13 @@ struct vfstable_header_Sierra {
 typedef struct mount_header_Sierra mount_header_internal;
 typedef struct vfstable_header_Sierra vfstable_header_internal;
 
-#endif //
+////////////////////////////////////////////////////
+//
+// end of 10.12 version definitions
+//
+/////////////////////////////////////////////////////
+
+#endif // end of macOS version switching
 
 //--------------------------------------------------------------------
 
