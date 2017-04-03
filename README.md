@@ -1,10 +1,10 @@
 # MacOSX-VFS-redirector
 
-##License
+## License
 
 The license model is a BSD Open Source License. This is a non-viral license, only asking that if you use it, you acknowledge the authors, in this case Slava Imameev.
 
-##Design
+## Design
 
 The filter is based on MacOSX-FileSystem-Filter. The filter design description can be found here https://github.com/slavaim/MacOSX-FileSystem-Filter .
 
@@ -20,7 +20,7 @@ The filter was tested on Mac OS X Yosemite (10.10) and Mac OS X El Capitan (10.1
 ```
 is used to choose the target OS version during compilation. If the condition is evaluated as true a kext will support Yosemite (10.10) and El Capitan (10.11), else a kext for Sierra (10.12) is being built. There is an alternative macOS version independent hooker implementation that uses a vnode structure inference, for details take a look at https://github.com/slavaim/MacOSX-FileSystem-Filter/blob/master/FsdFilter/FltFakeFSD.cpp#L1902 .
 
-##Filter loading
+## Filter loading
 
 The filter module is loaded by kextload command. The user client connects to the filter IOKit object to receive callbacks and modify data.
 
