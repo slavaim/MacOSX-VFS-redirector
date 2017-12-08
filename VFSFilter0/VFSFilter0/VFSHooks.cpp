@@ -543,6 +543,7 @@ QvrVnopLookupHookEx2(
                 goto __exit;
         }
 
+        /*
         if( ! QvrIsExtensionEqual( ap->a_cnp->cn_nameptr, ".docx" ) &&
             ! QvrIsExtensionEqual( ap->a_cnp->cn_nameptr, ".tmp" ) ){
             
@@ -551,7 +552,8 @@ QvrVnopLookupHookEx2(
             //
             goto __exit;
         }
-
+         */
+        
         //
         // there is no association with redirectIO, try to create one via shadow copying
         //
