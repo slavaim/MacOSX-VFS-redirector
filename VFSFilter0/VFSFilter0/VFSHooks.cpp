@@ -1140,6 +1140,7 @@ QvrVnopCreateHookEx2(
             return origVnop( ap );
     }
     
+    /*
     if( ! QvrIsExtensionEqual( ap->a_cnp->cn_nameptr, ".docx" ) &&
         ! QvrIsExtensionEqual( ap->a_cnp->cn_nameptr, ".tmp" ) ){
         
@@ -1148,6 +1149,7 @@ QvrVnopCreateHookEx2(
         //
         return origVnop( ap );
     }
+     */
     
     assert( preemption_enabled() );
     
